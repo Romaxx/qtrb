@@ -11,6 +11,8 @@ pushd $QT_SOURCE_DIR
 	-extprefix $QT_OUTPUT_DIR \
 	-hostprefix $QT_HOST_DIR \
 	-no-use-gold-linker \
+	-nomake examples \
+	-nomake tests \
 	-qt-xcb \
 	-v
 popd
